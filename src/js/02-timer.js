@@ -45,13 +45,6 @@ const options = {
                function addLeadingZero(value){
                 return value.toString().padStart(2, "0");
               };
-
-
-               setTimeout(()=>{
-              if (time.days===0&time.hours===0&time.minutes===0&time.seconds===0){clearInterval(intervalId)};
-              ;
-                    })
-
        refs.days.textContent=addLeadingZero(time.days);
        refs.hours.textContent=addLeadingZero(time.hours);
        refs.minutes.textContent=addLeadingZero(time.minutes);
